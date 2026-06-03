@@ -1,0 +1,72 @@
+find_flights:
+  description: >
+    Research and find the best flight options from {departure_city} to {destination}.
+    Search for flights around {check_in} for the return around {check_out}.
+    Consider {travelers} and find options that suit a {budget} budget.
+    Find at least 3 flight options with different airlines if possible.
+    For each flight include: airline, departure time, arrival time, duration, and estimated price.
+  expected_output: >
+    A structured list of at least 3 flight options from {departure_city} to {destination},
+    each with airline name, departure and arrival times, duration, and estimated price.
+  agent: flight_researcher
+  output_file: output/flights.json
+
+find_hotels:
+  description: >
+    Research and find the best hotel options in {destination} for {travelers}.
+    The stay is from {check_in} to {check_out}.
+    Focus on {budget} options that match these interests: {interests}.
+    Find at least 3 hotels in different neighborhoods if possible.
+    For each hotel include: name, location, price per night, rating, and key highlights.
+  expected_output: >
+    A structured list of at least 3 hotel options in {destination},
+    each with name, neighborhood, price per night, rating out of 5, and key highlights.
+  agent: hotel_researcher
+  context:
+    - find_flights
+  output_file: output/hotels.json
+
+plan_itinerary:
+  description: >
+    Create a detailed day-by-day itinerary for {destination} from {check_in} to {check_out}.
+    The itinerary is for {travelers} with interests in {interests}.
+    Budget level is {budget} — factor this into activity and restaurant recommendations.
+    For each day plan morning, afternoon, and evening activities.
+    Include specific place names, why they are worth visiting, and practical tips.
+    Mix popular attractions with hidden gems based on the traveler's interests.
+  expected_output: >
+    A complete day-by-day itinerary for the entire trip to {destination}.
+    Each day should have morning, afternoon, and evening sections with
+    specific activities, place names, and practical tips.
+  agent: itinerary_planner
+  context:
+    - find_flights
+    - find_hotels
+  output_file: output/itinerary.json
+
+compile_travel_plan:
+  description: >
+    Compile all research into one complete, polished travel plan for {travelers}
+    traveling to {destination} from {departure_city}.
+    Trip dates: {check_in} to {check_out}. Budget: {budget}.
+
+    The plan must include:
+    1. Trip summary — destination, dates, travelers, budget level
+    2. Recommended flight — pick the best option from the flight research and explain why
+    3. Recommended hotel — pick the best option from the hotel research and explain why
+    4. Full day-by-day itinerary from the itinerary research
+    5. Practical tips — local currency, weather, transport, cultural notes
+    6. Estimated total budget breakdown — flights, hotel, activities, food
+
+    Format everything in clean markdown with clear headings.
+    Then send the plan to the traveler via email.
+  expected_output: >
+    A complete, well-formatted markdown travel plan covering flights,
+    hotel, full itinerary, practical tips, and budget breakdown.
+    Confirmation that the email was sent successfully.
+  agent: travel_coordinator
+  context:
+    - find_flights
+    - find_hotels
+    - plan_itinerary
+  output_file: output/travel_plan.md
