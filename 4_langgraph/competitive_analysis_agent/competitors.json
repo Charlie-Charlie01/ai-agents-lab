@@ -1,0 +1,39 @@
+{
+    "competitors": [
+        {
+            "name": "apple",
+            "url": "https://www.apple.com",
+            "check_areas": {
+                "pricing": "https://www.apple.com/shop/buy-iphone",
+                "products": "https://www.apple.com/newsroom",
+                "blog": "https://www.apple.com/newsroom"
+            }
+        },
+        {
+            "name": "samsung",
+            "url": "https://www.samsung.com",
+            "check_areas": {
+                "pricing": "https://www.samsung.com/us/smartphones",
+                "products": "https://news.samsung.com",
+                "blog": "https://news.samsung.com"
+            }
+        },
+        {
+            "name": "google",
+            "url": "https://store.google.com",
+            "check_areas": {
+                "pricing": "https://store.google.com/us/category/phones",
+                "products": "https://blog.google",
+                "blog": "https://blog.google"
+            }
+        }
+
+    ],
+    "check_areas": [
+        "pricing",
+        "products",
+        "blog"
+    ],
+    "schedule": "weekly",
+    "notification_threshold": "any_change"
+}

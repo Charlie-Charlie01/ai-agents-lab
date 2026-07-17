@@ -1,0 +1,76 @@
+{
+  "pricing": {
+    "products": [
+      {
+        "name": "Samsung Galaxy A27 5G",
+        "current_price": "$0.00",
+        "regular_price": "$349.99",
+        "discount": "100%"
+      },
+      {
+        "name": "Samsung Galaxy S26 Ultra",
+        "current_price": "$36.11/month",
+        "regular_price": "$1,299.99",
+        "discount": "N/A"
+      },
+      {
+        "name": "Samsung Galaxy S26",
+        "current_price": "$24.99/month",
+        "regular_price": "$899.99",
+        "discount": "N/A"
+      },
+      {
+        "name": "Samsung Galaxy S26+",
+        "current_price": "$10.99/month",
+        "regular_price": "$899.99",
+        "discount": "N/A"
+      },
+      {
+        "name": "Samsung Galaxy A17 5G",
+        "current_price": "$69.99",
+        "regular_price": "$199.99",
+        "discount": "65%"
+      }
+    ]
+  },
+  "products": {
+    "recently_launched": [
+      "Galaxy S26 Ultra",
+      "Galaxy S25 FE",
+      "Galaxy Buds 4",
+      "Freestyle+ projector",
+      "Galaxy Book 6 series"
+    ],
+    "discontinued_products": [],
+    "major_spec_updates": []
+  },
+  "blog": {
+    "latest_posts": [
+      {
+        "title": "Samsung Introduces Flex Titanium Technology",
+        "publication_date": "2026-07-16",
+        "main_topic": "Foldable Technology"
+      },
+      {
+        "title": "Building the Foundation for Global 6G Standardization",
+        "publication_date": "2026-07-15",
+        "main_topic": "Telecommunications"
+      },
+      {
+        "title": "Samsung Expands Sony Pictures' Collaboration",
+        "publication_date": "2026-07-14",
+        "main_topic": "Entertainment"
+      },
+      {
+        "title": "Why We Invested in Nucleus",
+        "publication_date": "2026-07-13",
+        "main_topic": "Healthcare"
+      },
+      {
+        "title": "People are Buying the Galaxy S26",
+        "publication_date": "2026-07-12",
+        "main_topic": "Consumer Behavior"
+      }
+    ]
+  }
+}

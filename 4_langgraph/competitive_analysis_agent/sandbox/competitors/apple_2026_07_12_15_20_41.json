@@ -1,0 +1,70 @@
+{
+  "pricing": {
+    "products": [
+      {
+        "name": "iPhone 17 Pro",
+        "price": "TBD"
+      },
+      {
+        "name": "iPhone Air",
+        "price": "TBD"
+      },
+      {
+        "name": "iPhone 17",
+        "price": "TBD"
+      },
+      {
+        "name": "iPhone 17e",
+        "price": "TBD"
+      },
+      {
+        "name": "iPhone 16",
+        "price": "TBD"
+      }
+    ],
+    "promotions": [
+      "Carrier deals",
+      "Trade-in options"
+    ]
+  },
+  "products": {
+    "recently_launched": [
+      "Apple Vision Pro",
+      "Updates to Apple Creator Studio"
+    ],
+    "spec_updates": [
+      "iOS changes in Brazil",
+      "New features and intelligence experiences across services"
+    ]
+  },
+  "blog": {
+    "latest_posts": [
+      {
+        "title": "Apple and Major League Baseball announce August 'Friday Night Baseball' schedule",
+        "date": "2 days ago"
+      },
+      {
+        "title": "Apple scores record 89 Emmy Award nominations",
+        "date": "3 days ago"
+      },
+      {
+        "title": "Apple to increase spend with Broadcom to produce billions more U.S. chips",
+        "date": "3 days ago"
+      },
+      {
+        "title": "Apple Creator Studio gets smarter, faster, and more connected",
+        "date": "June 30, 2026"
+      },
+      {
+        "title": "Apple announces changes to iOS in Brazil",
+        "date": "June 18, 2026"
+      }
+    ],
+    "main_topics": [
+      "Sports partnerships",
+      "Entertainment and media achievements",
+      "Supply chain and manufacturing investments",
+      "Software and service enhancements"
+    ]
+  }
+}

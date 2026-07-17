@@ -1,0 +1,13 @@
+langchain
+langchain-openai
+langchain-community
+langchain-experimental
+langgraph
+playwright
+gradio
+google-search-results
+python-dotenv
+requests
+apscheduler
+langsmith
+pydantic
